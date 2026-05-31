@@ -355,7 +355,6 @@ class OOPSpellsIO:
         :param battle_setup: A battle containing the lineup of spellcasters on each team.
         """
         b = copy.deepcopy(battle_setup)
-        # TODO: PVE
         print("\n-*-*- BATTLE! -*-*-")
         winner = -1
         turn = 1 if self.__team_1_first else 2
