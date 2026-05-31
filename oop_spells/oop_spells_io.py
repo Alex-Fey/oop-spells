@@ -236,7 +236,7 @@ class OOPSpellsIO:
         # ----- BATTLE ASSEMBLY -----
         ba_action = None
         selected_team = 1
-        while ba_action != 8 and ba_action != 9:
+        while ba_action != 9:
             print("\n----- Battle Assembly -----\n")
             print(str(self.__ba))
             print(f"Mana regen per round: {self.__ba.mana_per_round():g}")
@@ -347,7 +347,12 @@ class OOPSpellsIO:
             elif ba_action == 8:
 
                 # ----- FIGHT! -----
-                self.battle(self.__ba)
+                if self.__ba.len(1) == 0:
+                    print("\nTeam 1 needs at least 1 spellcaster.")
+                elif self.__ba.len(2) == 0:
+                    print("\nTeam 2 needs at least 1 spellcaster.")
+                else:
+                    self.battle(self.__ba)
 
     def battle(self, battle_setup: Battle) -> None:
         """
