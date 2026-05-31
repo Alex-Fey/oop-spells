@@ -377,7 +377,7 @@ class OOPSpellsIO:
                 turn = 1
             else:
                 # ----- TEAM 2 RANDOM TURN -----
-                input("\nPress enter for Team 2 to take its turn.")
+                input("\nPress Enter for Team 2 to take its turn.")
                 turn_result = b.cast_random_spell(2)
                 turn = 1
 
@@ -402,7 +402,7 @@ class OOPSpellsIO:
         elif winner == 0:
             print(random_tie_message(1, 2))
 
-        input("\nPress enter to finish.")
+        input("\nPress Enter to finish.")
 
     def battle_turn(self, b: Battle, team: int) -> str:
         """
@@ -448,5 +448,5 @@ class OOPSpellsIO:
                     else:
                         result = (f"{b.get_name(team, caster)} casts {spells[spell].name()}!\n" +
                                   f"{b.get_name(team, caster)} killed {written_list(dead_list)}!")
-                    input(f"\nPress enter to cast {spells[spell].name()}!")
+                    input(f"\nPress Enter to cast {spells[spell].name()}!")
         return result

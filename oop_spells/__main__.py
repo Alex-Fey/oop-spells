@@ -7,3 +7,4 @@ if __name__ == "__main__":
 
 # Command used to convert to EXE:
 # pyinstaller --onefile --console --icon=icon/oop_spells_icon.ico oop_spells/__main__.py
+# Note: build folder, dist folder, and __main__.spec were not kept.
