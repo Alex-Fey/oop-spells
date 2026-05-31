@@ -1,20 +1,18 @@
 # <img src="icon/oop_spells_icon.png" alt="Sample" height="40"> Object-Oriented Programming (OOP) Spells
 
-Object-Oriented Programming (OOP Spells) is a small console-based battle game made to practice object-oriented
+This is a small console-based battle game made to practice object-oriented
 programming in Python. It allows you to assemble two teams of spellcasters (objects with a name, health, mana, a damage
 modifier, and a list of spells) and battle them!
 
 ## Installation
 
-> Just download `OOP Spells.exe`!<br>
-> Note: this program is only guaranteed to work on Windows.
+Just download `OOP Spells.exe`!
 
-All spellcaster storage data is automatically saved in `AppData/Roaming`.
+> Note: this program is only guaranteed to work on Windows since spellcaster storage data is saved in `AppData/Roaming`.
 
 ## Getting Started
 
 1. Run `OOP Spells.exe`. You should see the main menu.
-
 
 ### Creating Spellcaster Storage Files
 
